@@ -2,10 +2,14 @@
 
 {{#each randomBeer}}
 <div>
-    <div><img src="{{this.image_url}}" alt=""></div>
+
+    {{!-- <div><img src="{{this.image_url}}" alt=""></div>
     {{this.name}} 
     {{this.description}}
-    {{this.tagline}} 
+    {{this.tagline}}  --}}
+
+    {{>beerPartial}}
+
     {{this.food_pairing}} 
     {{this.brewers_tips}}
 </div>
